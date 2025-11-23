@@ -29,7 +29,7 @@ while True:
         outputdata = f.read 
  
         # Envia a linha de status do cabeçalho HTTP 
-        connectionSocket.send("HTTP/1.1 200 OK\r\n\r\n".encode())
+        connectionSocket.send('HTTP/1.1 200 OK\r\n\r\n'.encode())
  
         # Envia o conteúdo do arquivo ao cliente 
         for i in range(0, len(outputdata)): 
@@ -40,13 +40,8 @@ while True:
         connectionSocket.close() 
  
     except IOError: 
-        # Envia mensagem de erro 404 se o arquivo não for encontrado 
-        #Fill in start 
-        #Fill in end 
- 
-        # Fecha o socket do cliente 
-        #Fill in start 
-        #Fill in end 
+        connectionSocket.send('HTTP/1.1 404 Not found\r\n\r\n'.encode())
+        connectionSocket.send('<html><body><h1>404 Not Found</h1></body></html>\r\n".encode()')
  
 serverSocket.close() 
 sys.exit()  # Encerra o programa
