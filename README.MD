@@ -13,15 +13,12 @@
 Para realizar a atividade, foi implementado um servidor Web simples em Python, responsável por disponibilizar apenas uma página específica.
 
 A logica funciona da seguinte maneira : 
-  A lógica funciona assim:
 
 Existe um arquivo principal do servidor (por exemplo: webserver.py).
 
 Dentro dele, o código cria um socket, inicia o servidor HTTP básico e aguarda conexões.
 
-Quando o navegador acessa a página correta (por exemplo: index.html ou o arquivo solicitado no PDF), o servidor:
-
-lê o arquivo local,
+Quando o navegador acessa a página correta (por exemplo: index.html ou o arquivo solicitado no PDF), o servidor lê o arquivo local,
 
 envia o conteúdo para o navegador,
 
@@ -39,5 +36,6 @@ Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o
 --- Servidor-Web (Pasta)
 - HelloWorld.html        # Arquivo HTML
 - webserver.py           # Arquivo python HTTP servidor
+
 
 
