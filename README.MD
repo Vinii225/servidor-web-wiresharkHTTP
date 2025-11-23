@@ -34,6 +34,7 @@ O servidor retorna 200 OK e envia o arquivo.
 
 Segunda requisição:
 O navegador envia If-Modified-Since com a data do arquivo.
+
 O servidor responde 304 Not Modified, não envia o conteúdo e manda o navegador usar o arquivo do cache.
 
 ### Estrutura do Repositório
@@ -45,6 +46,7 @@ O servidor responde 304 Not Modified, não envia o conteúdo e manda o navegador
 --- Servidor-Web (Pasta)
 - HelloWorld.html        # Arquivo HTML
 - webserver.py           # Arquivo python HTTP servidor
+
 
 
 
