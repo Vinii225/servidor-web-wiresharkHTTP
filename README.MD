@@ -53,6 +53,3 @@ O servidor responde 304 Not Modified, não envia o conteúdo e manda o navegador
 
 --- ArquivoRespostaAtividade (Pasta)
 - Atividade - AV2.pdf                            # Arquivo da atividade com as tarefas
-
-
-
