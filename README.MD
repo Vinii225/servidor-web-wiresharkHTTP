@@ -9,7 +9,9 @@
 **Data de realização:** durante os dias 10 e 24 de Novembro de 2025
 
 ### 1. Implementação do Servidor WEB em python
+
 Para realizar a atividade, foi implementado um servidor Web simples em Python, responsável por disponibilizar apenas uma página específica.
+
 A logica funciona da seguinte maneira : 
   A lógica funciona assim:
 
@@ -37,4 +39,5 @@ Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o
 --- Servidor-Web (Pasta)
 - HelloWorld.html        # Arquivo HTML
 - webserver.py           # Arquivo python HTTP servidor
+
 
