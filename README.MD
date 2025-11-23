@@ -26,6 +26,15 @@ responde com o cabeçalho HTTP/1.1 200 OK.
 Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o servidor irá retonar : HTTP/1.1 404 Not Found 
 
 ### 2. Análises das requisições e respostas do HTTP utilizando Wireshark como ferramenta
+A primeira requisição GET não usa If-Modified-Since (cache limpo).
+
+Primeira requisição:
+Não tem If-Modified-Since, porque o navegador não tinha cache.
+O servidor retorna 200 OK e envia o arquivo.
+
+Segunda requisição:
+O navegador envia If-Modified-Since com a data do arquivo.
+O servidor responde 304 Not Modified, não envia o conteúdo e manda o navegador usar o arquivo do cache.
 
 ### Estrutura do Repositório
 
@@ -36,6 +45,7 @@ Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o
 --- Servidor-Web (Pasta)
 - HelloWorld.html        # Arquivo HTML
 - webserver.py           # Arquivo python HTTP servidor
+
 
 
 
