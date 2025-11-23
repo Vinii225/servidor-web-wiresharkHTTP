@@ -12,7 +12,7 @@
 
 Para realizar a atividade, foi implementado um servidor Web simples em Python, responsável por disponibilizar apenas uma página específica.
 
-A logica funciona da seguinte maneira : 
+A lógica funciona da seguinte maneira:
 
 Existe um arquivo principal do servidor (por exemplo: webserver.py).
 
@@ -23,9 +23,10 @@ Quando o navegador acessa a página correta (por exemplo: index.html ou o arquiv
 envia o conteúdo para o navegador,
 
 responde com o cabeçalho HTTP/1.1 200 OK.
-Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o servidor irá retonar : HTTP/1.1 404 Not Found 
+Porém, se tentar acessar qualquer outra pagina que não existe no diretorio , o servidor irá retonar : HTTP/1.1 404 Not Found
 
 ### 2. Análises das requisições e respostas do HTTP utilizando Wireshark como ferramenta
+
 A primeira requisição GET não usa If-Modified-Since (cache limpo).
 
 Primeira requisição:
@@ -40,14 +41,18 @@ O servidor responde 304 Not Modified, não envia o conteúdo e manda o navegador
 ### Estrutura do Repositório
 
 ```plaintext
-- README.md               # Documentação do repositório
-- Atividade - AV2.pdf     # Arquivo da atividade com as tarefas
+- README.md                                      # Documentação do repositório
 
 --- Servidor-Web (Pasta)
-- HelloWorld.html        # Arquivo HTML
-- webserver.py           # Arquivo python HTTP servidor
+- HelloWorld.html                                # Arquivo HTML       
+- webserver.py                                   # Arquivo python HTTP servidor
 
+--- Wireshark
+- Parte1-PrimeiroAcessoHTTP.pcapng               # Arquivo Wireshark
+- Parte2-SegundoAcessoHTTP-Conditional.pcapng    # Arquivo Wireshark
 
+--- ArquivoRespostaAtividade (Pasta)
+- Atividade - AV2.pdf                            # Arquivo da atividade com as tarefas
 
 
 
